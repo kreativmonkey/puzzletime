@@ -8,13 +8,26 @@
 # Global settings for puzzleTime #
 # ############################## #
 
+<% country = ENV['RAILS_PTIME_COUNTRY'] || 'CH' %>
 # Array of holidays with a fixed date. [day, month]
+# Only fixed-date holidays are supported here. Movable holidays
+# (e.g. Karfreitag, Ostermontag, Auffahrt/Christi Himmelfahrt) must be
+# maintained per year under Verwaltung > Feiertage.
+<% if country == 'DE' %>
+regular_holidays:
+  - [1,1]   # Neujahr
+  - [1,5]   # Tag der Arbeit
+  - [3,10]  # Tag der Deutschen Einheit
+  - [25,12] # 1. Weihnachtsfeiertag
+  - [26,12] # 2. Weihnachtsfeiertag
+<% else %>
 regular_holidays:
   - [1,1]   # Neujahr
   - [2,1]   # Berchtoldstag
   - [1,8]   # Bundesfeiertag
   - [25,12] # 1. Weihnachtstag
   - [26,12] # Stefanstag
+<% end %>
 
 api_client:
   user: <%= ENV['RAILS_API_USER'] || SecureRandom.hex %>
@@ -127,11 +140,12 @@ puzzletime:
 defaults:
   report_type: absolute_day
   start_hour: 8
-  country: <%= ENV['RAILS_PTIME_COUNTRY'] || 'CH' %>
-  vat: <%= ENV['RAILS_PTIME_VAT'] || 7.7 %>
-  currency: <%= ENV['RAILS_PTIME_CURRENCY'] || 'CHF' %>
-  # Month number the business year starts (e.g. 1 for 1.1.YYYY, 7 for 1.7.YYYY)
-  business_year_start_month: 7
+  country: <%= country %>
+  vat: <%= ENV['RAILS_PTIME_VAT'] || (country == 'DE' ? 19 : 7.7) %>
+  currency: <%= ENV['RAILS_PTIME_CURRENCY'] || (country == 'DE' ? 'EUR' : 'CHF') %>
+  # Month number the business year starts (e.g. 1 for 1.1.YYYY, 7 for 1.7.YYYY).
+  # In Germany the vacation year is the calendar year (§ 1 BUrlG), so DE defaults to 1.
+  business_year_start_month: <%= ENV['RAILS_PTIME_BUSINESS_YEAR_START_MONTH'] || (country == 'DE' ? 1 : 7) %>
   payment_period: 30 # days
   payment_periods:
     - 30
