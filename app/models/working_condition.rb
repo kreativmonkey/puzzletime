@@ -22,6 +22,13 @@ class WorkingCondition < ApplicationRecord
             numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 24 }
   validates :vacation_days_per_year,
             numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 365 }
+  # § 3 BUrlG: statutory minimum of 20 vacation days for a five-day week.
+  # Employments with other week models use the per-employment override.
+  validates :vacation_days_per_year,
+            numericality: { greater_than_or_equal_to: 20,
+                            message: 'müssen mindestens 20 betragen ' \
+                                     '(gesetzlicher Mindesturlaub nach § 3 BUrlG bei 5-Tage-Woche)' },
+            if: -> { Settings.defaults.country == 'DE' }
   validate :exactly_one_without_valid_from
 
   before_destroy :protect_blank_valid_from
