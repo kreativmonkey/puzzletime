@@ -438,6 +438,7 @@ de-CH:
         ticket: Ticket
         account: Buchungsposition
         invoice_id: Rechnung
+        sick_note_received_on: Arztzeugnis vom
 
     associations:
       contact:

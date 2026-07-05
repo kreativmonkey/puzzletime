@@ -438,6 +438,7 @@ de-DE:
         ticket: Ticket
         account: Buchungsposition
         invoice_id: Rechnung
+        sick_note_received_on: AU-Nachweis vom
 
     associations:
       contact:
