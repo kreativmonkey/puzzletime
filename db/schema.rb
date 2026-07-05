@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2026_03_20_140302) do
+ActiveRecord::Schema[7.1].define(version: 2026_07_05_120000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -495,6 +495,7 @@ ActiveRecord::Schema[7.1].define(version: 2026_03_20_140302) do
     t.integer "invoice_id"
     t.boolean "meal_compensation", default: false, null: false
     t.text "internal_description"
+    t.date "sick_note_received_on"
     t.index ["absence_id", "employee_id", "work_date"], name: "worktimes_absences"
     t.index ["employee_id", "work_date"], name: "worktimes_employees"
     t.index ["invoice_id"], name: "index_worktimes_on_invoice_id"

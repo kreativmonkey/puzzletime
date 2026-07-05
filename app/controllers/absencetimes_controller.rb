@@ -7,7 +7,8 @@
 
 class AbsencetimesController < WorktimesController
   self.permitted_attrs = %i[absence_id report_type work_date hours
-                            from_start_time to_end_time description]
+                            from_start_time to_end_time description
+                            sick_note_received_on]
 
   before_render_form :set_accounts
   after_destroy :send_email_notification

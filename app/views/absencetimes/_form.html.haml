@@ -16,6 +16,9 @@
                                          dynamic_params: 'absencetime[work_date]' })
   = f.labeled_belongs_to_field(:absence_id, class: entry.new_record? ? 'initial-focus' : '',)
   = f.labeled_text_area(:description)
+  -# Attestpflicht (§ 5 EFZG): only relevant for German instances.
+  - if Settings.defaults.country == 'DE'
+    = f.labeled_date_field(:sick_note_received_on)
   = f.labeled_date_field(:work_date,
                          data: { remote: true,
                                  url: url_for(action: 'existing'),

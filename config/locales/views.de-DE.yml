@@ -1,0 +1,18 @@
+#  Copyright (c) 2006-2017, Puzzle ITC GmbH. This file is part of
+#  PuzzleTime and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/puzzle/puzzletime.
+
+---
+de-DE:
+  version:
+    attribute_change:
+      from_to: "%{attr} %{model_ref} wurde von „%{from}“ auf „%{to}“ geändert."
+      from: "%{attr} %{model_ref} „%{from}“ wurde gelöscht."
+      to: "%{attr} %{model_ref} wurde auf „%{to}“ gesetzt."
+  expenses:
+    attachment:
+      hint: Der Beleg muss ein gut lesbares Bild oder PDF sein und den Kaufpreis, das Kaufdatum und die USt-Nummer enthalten.
+  expenses_reviews:
+    attachment:
+      hint: Der Beleg muss ein gut lesbares Bild oder PDF sein und den Kaufpreis, das Kaufdatum und die USt-Nummer enthalten.

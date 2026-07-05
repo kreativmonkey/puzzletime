@@ -1,0 +1,33 @@
+#  Copyright (c) 2006-2017, Puzzle ITC GmbH. This file is part of
+#  PuzzleTime and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/puzzle/puzzletime.
+
+---
+de-DE:
+  devise:
+    confirmations:
+      confirmed: Deine E-Mail-Adresse wurde erfolgreich bestätigt.
+      send_instructions: Du wirst in Kürze eine E-Mail mit weiteren Schritten erhalten, um deine E-Mail-Adresse zu bestätigen.
+      send_paranoid_instructions: Falls deine E-Mail-Adresse in unserer Datenbank existiert, wirst du in Kürze eine E-Mail mit weiteren Schritten erhalten, um deine E-Mail-Adresse zu bestätigen.
+    failure:
+      unconfirmed: Du musst deine E-Mail-Adresse bestätigen, bevor du fortfahren kannst.
+    mailer:
+      email_changed:
+        subject: E-Mail geändert
+    passwords:
+      no_token: Du kannst nicht auf diese Seite zugreifen, wenn du nicht einem Link in der Zurücksetzungs-E-Mail gefolgt bist. Falls dies der Fall war, bitte stelle sicher, dass du die komplette URL verwendest.
+      send_instructions: Du wirst in Kürze eine E-Mail erhalten, mit weiteren Schritten um dein Passwort zurückzusetzen.
+      send_paranoid_instructions: Falls deine E-Mail-Adresse in unserer Datenbank existiert, wirst du in Kürze eine E-Mail erhalten, mit weiteren Schritten um dein Passwort zurückzusetzen.
+    registrations:
+      signed_up_but_unconfirmed: Eine E-Mail mit einem Bestätigungslink wurde an deine E-Mail-Adresse gesendet. Bitte folge dem Link um dein Konto zu aktivieren.
+      update_needs_confirmation: Du hast dein Konto erfolgreich aktualisiert, aber wir müssen deine neue E-Mail-Adresse bestätigen. Bitte überprüfe deine E-Mails und folge dem Bestätigungslink um deine neue E-Mail-Adresse zu bestätigen.
+    unlocks:
+      send_instructions: Du wirst in Kürze eine E-Mail mit Schritten erhalten um dein Konto zu entsperren.
+      send_paranoid_instructions: Falls dein Konto existiert, wirst du in Kürze eine E-Mail mit Schritten erhalten um dein Konto zu entsperren.
+      unlocked: Dein Konto wurde erfolgreich entsperrt. Bitte melde dich an um fortzufahren.
+  errors:
+    messages:
+      not_saved:
+        one: '1 Fehler verhinderte das Speichern von %{resource}:'
+        other: "%{count} Fehler verhinderten das Speichern von %{resource}:"
