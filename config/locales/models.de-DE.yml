@@ -122,9 +122,9 @@ de-DE:
     attributes:
       absence:
         name: Bezeichnung
-        payed: Bezahlt
+        payed: Erfüllt Sollzeit (bezahlt)
         private: Nicht öffentlich
-        vacation: Urlaub
+        vacation: Zählt vom Urlaubskonto ab
       absencetime:
         duration: Dauer
       accounting_post:
