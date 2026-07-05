@@ -13,441 +13,45 @@ de-DE:
       absencetime:
         one: Abwesenheit
         other: Abwesenheiten
-      accounting_post:
-        one: Buchungsposition
-        other: Buchungspositionen
-      billing_address:
-        one: Rechnungsadresse
-        other: Rechnungsadressen
-      client:
-        one: Kunde
-        other: Kunden
-      contact:
-        one: Kontakt
-        other: Kontakte
-      contract:
-        one: Vertrag
-        other: Verträge
-      department:
-        one: Organisationseinheit
-        other: Organisationseinheiten
-      custom_list:
-        one: Liste
-        other: Listen
-      employee:
-        one: Member
-        other: Members
-      employment:
-        one: Anstellung
-        other: Anstellungen
-      employment_role:
-        one: Funktionsbezeichnung
-        other: Funktionsbezeichnungen
-      employment_role_level:
-        one: Funktionsstufe
-        other: Funktionsstufen
-      employment_role_category:
-        one: Funktionskategorie
-        other: Funktionskategorien
-      expense:
-        one: Spesen
-        other: Spesen
-      holiday:
-        one: Feiertag
-        other: Feiertage
-      invoice:
-        one: Rechnung
-        other: Rechnungen
-      order:
-        one: Auftrag
-        other: Aufträge
-      order_chance:
-        one: Chance
-        other: Chancen
-      order_comment:
-        one: Journaleintrag
-        other: Journaleinträge
-      order_kind:
-        one: Auftragsart
-        other: Auftragsarten
-      order_risk:
-        one: Risiko
-        other: Risiken
-      order_status:
-        one: Auftragsstatus
-        other: Auftragsstatus
-      order_target:
-        one: Auftragsziel
-        other: Auftragsziele
-      order_uncertainty:
-        one: Chance/Risiko
-        other: Chancen/Risiken
-      ordertime:
-        one: Zeit
-        other: Zeiten
       overtime_vacation:
         one: Überstunden-Urlaub Umbuchung
         other: Überstunden-Urlaub Umbuchungen
-      planning:
-        one: Planung
-        other: Planungen
-      portfolio_item:
-        one: Portfolioposition
-        other: Portfoliopositionen
-      sector:
-        one: Branche
-        other: Branchen
-      service:
-        one: Dienstleistung
-        other: Dienstleistungen
-      target_scope:
-        one: Zielwert
-        other: Zielwerte
-      user_notification:
-        one: Nachricht
-        other: Nachrichten
-      workplace:
-        one: Arbeitsort
-        other: Arbeitsorte
-      work_item:
-        one: Position
-        other: Positionen
-      working_condition:
-        one: Arbeitsbedingung
-        other: Arbeitsbedingungen
-      worktime:
-        one: Arbeitszeit
-        other: Arbeitszeiten
-
     attributes:
       absence:
-        name: Bezeichnung
         payed: Erfüllt Sollzeit (bezahlt)
-        private: Nicht öffentlich
         vacation: Zählt vom Urlaubskonto ab
-      absencetime:
-        duration: Dauer
       accounting_post:
-        work_item_id: Position
-        portfolio_item_id: Portfolio
-        service_id: Dienstleistung
-        reference: Referenz
         offered_hours: Angebotene Stunden
         offered_rate: Angebotener Stundensatz
-        remaining_hours: Restaufwand
         report_type: Report-Typ
-        billable: Verrechenbar
-        meal_compensation: Verpflegungsentschädigung
-        description_required: Beschreibung erforderlich
-        ticket_required: Ticket erforderlich
-        closed: Geschlossen
       billing_address:
-        client_id: Kunde
-        contact_id: Kontakt
-        supplement: Zusatz
         street: Straße
-        zip_code: PLZ
-        town: Ort
-        country: Land
-        country_name: Land
-      client:
-        name: Name
-        shortname: Kürzel
-        allow_local: Lokale Aufträge zulassen
-        sector_id: Branche
-        e_bill_account_key: eBillAccountID
-      contact:
-        client_id: Kunde
-        lastname: Nachname
-        firstname: Vorname
-        function: Funktion
-        email: E-Mail
-        phone: Telefon
-        mobile: Mobile
-      contract:
-        number: Vertragsnummer
-        start_date: von
-        end_date: bis
-        payment_period: Zahlungsfrist
-        reference: Referenz
-        notes: Notizen
-        sla: SLA
-      custom_list:
-        name: Name
-        item_type: Typ
-      department:
-        name: Name
-        shortname: Kürzel
       employee:
-        firstname: Vorname
-        lastname: Nachname
-        shortname: Kürzel
-        management: Management
-        department: Organisationseinheit
-        department_id: Organisationseinheit
         initial_vacation_days: Anfänglicher Urlaub
-        ldapname: LDAP Name
-        current_percent: Beschäftigungsgrad
-        eval_periods: Zeitspannen Auswertungen
-        committed_worktimes_at: Letzte freigegebene Periode
-        reviewed_worktimes_at: Letzte kontrollierte Periode
-        probation_period_end_date: Ende Probezeit
-        member_coach: Member Coach
-        member_coach_id: Member Coach
-        graduation: Abschluss
-        phone_office: Telefon Büro
-        phone_private: Mobiltelefon
         street: Straße
-        postal_code: PLZ
-        city: Ort
-        birthday: Geburtstag
-        emergency_contact_name: Notfallperson
-        emergency_contact_phone: Notfallnummer
         marital_status: Personenstand
         social_insurance: Sozialversicherungsnummer
-        nationalities: Nationalitäten
-        additional_information: Zusätzliche Informationen
-        crm_key: Highrise ID
-        identity_card_type: Ausweistyp
-        identity_card_valid_until: Ausweis gültig bis
-        workplace_id: Arbeitsort
-        worktimes_commit_reminder: Freigabeerinnerung senden
-      employee/marital_statuses:
-        married: Verheiratet
-        single: Ledig
-        widowed: Verwittwet
-        civil_partnership: Eingetragene Partnerschaft
-        divorced: Geschieden
       employment:
-        employee_id: Member
-        start_date: Startdatum
-        end_date: Enddatum
-        percent: Beschäftigungsgrad
         vacation_days_per_year: Urlaubstage pro Jahr
-        employment_roles_employments: Funktionsanteile
-        comment: Kommentar
-      employment_role:
-        name: Name
-        billable: Verrechenbar
-        level: Funktion hat Stufen
-        employment_role_category_id: Funktionskategorie
-      employment_role_level:
-        name: Name
-      employment_role_category:
-        name: Name
       employment_roles_employment:
         percent: Anteil
-        employment_role: Funktion
       expense:
-        id: Spesennummer
-        amount: Betrag
-        description: Beschreibung
-        employee_id: Member
-        kind: Spesenart
-        kind_value: Spesenart
-        status_value: Status
-        status: Status
-        order_id: Projekt
-        payment_date: Kaufdatum
-        submission_date: Eingereicht am
-        receipt: Beleg
-        reimbursement_month: Auszahlungsmonat
         reviewer_id: Freigabe
         department_id: Organisationseinheit
-        reason: Begründung / Bemerkung
         reviewed_at: Freigegeben am
-      expense/statuses:
-        approved: Freigegeben
-        pending: Offen
-        deferred: In Bearbeitung
-        rejected: Abgelehnt
-      expense/kinds:
-        project: Projekt
-        sales: Verkauf / Kundenbetreuung
-        support: Teamevent / Mitarbeiterbetreuung
-        training: Aus- / Weiterbildung
-        other: Weitere
       holiday:
-        holiday_date: Datum
         musthours_day: Sollstunden
-      invoice:
-        billing_address: Rechnungsadresse
-        billing_client_id: Rechnungskunde
-        billing_date: Rechnungsdatum
-        calculated_total_amount: Total Leistungen
-        calculated_total_hours: Verrechenbare Leistungen
-        due_date: Fälligkeitsdatum
-        employees: Members
-        grouping: Gruppierung
-        invoice_posts: Rechnungspositionen
-        manual_invoice: Manuelle Rechnung
-        manual?: Manuell
-        order: Auftrag
-        order_id: Auftrag
-        period: Leistungsperiode
-        period_from: von
-        period_to: bis
-        period_shortcut_selection: Vergangenen Monat wählen
-        reference: Referenz
-        status: Status
-        total_amount: Rechnungsbetrag
-        total_hours: Total Stunden
-        work_items: Buchungspositionen
-      invoice/statuses:
-        draft: Entwurf
-        sent: Gesendet
-        paid: Bezahlt
-        partially_paid: Teilbezahlt
-        deleted: Gelöscht
-        cancelled: Storniert
-        unknown: Unbekannt
-      order:
-        client: Kunde
-        category: Kategorie
-        order: Auftrag
-        kind: Art
-        kind_id: Art
-        responsible: Verantwortliche(r)
-        responsible_id: Verantwortliche(r)
-        status: Status
-        status_id: Status
-        department: Organisationseinheit
-        department_id: Organisationseinheit
-        contract_id: Vertrag
-        billing_address_id: Rechnungsadresse
-        order_contacts: Ansprechspersonen Kunde
-        order_team_members: Team
-        completed_at: Letzter erledigter Abschluss
-        committed_at: Letzter freigegebener Abschluss
-        created_at: Erstellt
-        updated_at: Aktualisiert
-      order_comment:
-        order_id: Auftrag
-        text: Kommentar
-      order_contact:
-        contact: Ansprechsperson
-        contact_id: Ansprechsperson
-        comment: Funktion
-      order_cost:
-        meal_compensation: Verpflegungsentschädigung
-        expense: Spesen
-      order/order_contacts:
-        contact: Ansprechsperson
-      order/team_members:
-        employee: Member
-      order_kind:
-        name: Bezeichnung
-      order_status:
-        name: Bezeichnung
-        style: Darstellung
-        closed: Geschlossen
-        position: Position
-      order_target:
-        target_scope_id: Wert
-        rating: Bewertung
-        comment: Kommentar
       order_uncertainty:
-        name: Name
-        probability: Eintrittswahrscheinlichkeit
-        impact: Auswirkung
         measure: Maßnahmen
-        risk: Risiko
       order_uncertainty/probabilities:
-        improbable: unwahrscheinlich (< 5%)
-        low: gering (> 5% - < 20%)
-        medium: mittel (> 20% - < 50%)
         high: groß (> 50%)
       order_uncertainty/impacts:
-        none: keine oder sehr geringe (< 5%)
-        low: geringe (> 5% - < 20%)
-        medium: mittlere (> 20% - < 50%)
         high: große (> 50%)
       order_uncertainty/risks:
-        low: gering
-        medium: mittel
         high: groß
-      overtime_vacation:
-        employee_id: Member
-        hours: Stunden
-        transfer_date: Umgebucht am
-      planning:
-        employee_id: Member
-        work_item_id: Position
-        project_id: Projekt
-        start_week: Start
-        start_week_date: Start
-        end_week: Bis KW
-        definitive: Definitiv
-        description: Bemerkungen
-        monday_am: Montag Vormittag
-        monday_pm: Montag Nachmittag
-        tuesday_am: Dienstag Vormittag
-        tuesday_pm: Dienstag Nachmittag
-        wednesday_am: Mittwoch Vormittag
-        wednesday_pm: Mittwoch Nachmittag
-        thursday_am: Donnerstag Vormittag
-        thursday_pm: Donnerstag Nachmittag
-        friday_am: Freitag Vormittag
-        friday_pm: Freitag Nachmittag
-        is_abstract: Abstrakt
-        abstract_amount: Anzahl
-      portfolio_item:
-        name: Bezeichnung
-        active: Aktiv
-      sector:
-        name: Bezeichnung
-        active: Aktiv
-      service:
-        name: Bezeichnung
-        active: Aktiv
-      target_scope:
-        name: Bezeichnung
-        icon: Icon
-        position: Position
-        rating_green_description: Beschreibung Bewertung grün
-        rating_orange_description: Beschreibung Bewertung orange
-        rating_red_description: Beschreibung Bewertung rot
-      user_notification:
-        date_from: Startdatum
-        date_to: Enddatum
-        message: Nachricht
-      work_item:
-        name: Name
-        shortname: Kürzel
-        description: Beschreibung
       working_condition:
-        valid_from: Gültig ab
         vacation_days_per_year: Urlaubstage pro Jahr
-        must_hours_per_day: Arbeitszeit pro Tag
       worktime:
-        account_id: Buchungsposition
         absence_id: Abwesenheit
-        work_item: Buchungsposition
-        work_item_id: Buchungsposition
         absence: Abwesenheit
-        employee_id: Member
-        report_type: Reporttyp
-        work_date: Datum
-        hours: Stunden
-        from_start_time: Von
-        to_end_time: Bis
-        description: Bemerkungen
-        internal_description: Interne Bemerkungen
-        billable: Verrechenbar
-        meal_compensation: Verpflegungsentschädigung
-        ticket: Ticket
-        account: Buchungsposition
-        invoice_id: Rechnung
         sick_note_received_on: AU-Nachweis vom
-
-    associations:
-      contact:
-        no_entry: '(keiner)'
-
-    errors:
-      models:
-        client:
-          attributes:
-            e_bill_account_key:
-              number: muss eine 17-stellige Zahl sein und mit 4110 beginnen
-...

@@ -57,6 +57,9 @@ module Puzzletime
         :'de-CH'
       end
     config.i18n.default_locale = locale
+    # de-DE only needs to override where it differs from de-CH;
+    # everything else falls back to de-CH (and generic de from rails-i18n).
+    config.i18n.fallbacks = { 'de-DE': :'de-CH' }
 
     config.encoding = 'utf-8'
 
