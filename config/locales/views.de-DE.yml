@@ -1,0 +1,53 @@
+#  Copyright (c) 2006-2017, Puzzle ITC GmbH. This file is part of
+#  PuzzleTime and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/puzzle/puzzletime.
+
+---
+de-DE:
+  version:
+    model:
+      create:
+        employee: 'Der Member #%{id} wurde erstellt.'
+        employment: 'Die Anstellung #%{id} wurde erstellt.'
+        employmentrolesemployment: 'Der Funktionsanteil "%{role}" der Anstellung #%{employment_id} wurde erstellt.'
+      update:
+        employee: 'Der Member #%{id} wurde bearbeitet.'
+        employment: 'Die Anstellung #%{id} wurde bearbeitet.'
+        employmentrolesemployment: 'Der Funktionsanteil "%{role}" der Anstellung #%{employment_id} wurde bearbeitet.'
+      destroy:
+        employee: 'Der Member #%{id} wurde gelöscht.'
+        employment: 'Die Anstellung #%{id} wurde gelöscht.'
+        employmentrolesemployment: 'Der Funktionsanteil "%{role}" der Anstellung #%{employment_id} wurde gelöscht.'
+    model_reference:
+      employee: 'des Members'
+      employment: 'der Anstellung'
+      employmentrolesemployment: 'des Funktionsanteils'
+    attribute_change:
+      from_to: '%{attr} %{model_ref} wurde von „%{from}“ auf „%{to}“ geändert.'
+      from: '%{attr} %{model_ref} „%{from}“ wurde gelöscht.'
+      to: '%{attr} %{model_ref} wurde auf „%{to}“ gesetzt.'
+
+  expenses: &expenses
+    new:
+      title: '%{model} erfassen'
+    create:
+      title: '%{model} erfassen'
+      flash:
+        success: '%{model} wurden erfolgreich erfasst.'
+    update:
+      flash:
+        success: '%{model} wurden erfolgreich aktualisiert.'
+    destroy:
+      flash:
+        success: '%{model} wurden erfolgreich gelöscht.'
+        failure: '%{model} konnten nicht gelöscht werden.'
+    attachment:
+      name: 'Anhang'
+      show: 'Anzeigen'
+      hint: 'Der Beleg muss ein gut lesbares Bild oder PDF sein und den Kaufpreis, das Kaufdatum und die USt-Nummer enthalten.'
+    global:
+      link:
+        add: Erfassen
+
+  expenses_reviews: *expenses

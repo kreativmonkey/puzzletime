@@ -49,6 +49,9 @@ de-DE:
       employment_role_category:
         one: Funktionskategorie
         other: Funktionskategorien
+      expense:
+        one: Spesen
+        other: Spesen
       holiday:
         one: Feiertag
         other: Feiertage
@@ -103,6 +106,9 @@ de-DE:
       user_notification:
         one: Nachricht
         other: Nachrichten
+      workplace:
+        one: Arbeitsort
+        other: Arbeitsorte
       work_item:
         one: Position
         other: Positionen
@@ -204,6 +210,8 @@ de-DE:
         crm_key: Highrise ID
         identity_card_type: Ausweistyp
         identity_card_valid_until: Ausweis gültig bis
+        workplace_id: Arbeitsort
+        worktimes_commit_reminder: Freigabeerinnerung senden
       employee/marital_statuses:
         married: Verheiratet
         single: Ledig
@@ -228,9 +236,37 @@ de-DE:
       employment_role_category:
         name: Name
       employment_roles_employment:
-        percent: Pensum
+        percent: Anteil
+        employment_role: Funktion
       expense:
-        department_id: OE
+        id: Spesennummer
+        amount: Betrag
+        description: Beschreibung
+        employee_id: Member
+        kind: Spesenart
+        kind_value: Spesenart
+        status_value: Status
+        status: Status
+        order_id: Projekt
+        payment_date: Kaufdatum
+        submission_date: Eingereicht am
+        receipt: Beleg
+        reimbursement_month: Auszahlungsmonat
+        reviewer_id: Freigabe
+        department_id: Organisationseinheit
+        reason: Begründung / Bemerkung
+        reviewed_at: Freigegeben am
+      expense/statuses:
+        approved: Freigegeben
+        pending: Offen
+        deferred: In Bearbeitung
+        rejected: Abgelehnt
+      expense/kinds:
+        project: Projekt
+        sales: Verkauf / Kundenbetreuung
+        support: Teamevent / Mitarbeiterbetreuung
+        training: Aus- / Weiterbildung
+        other: Weitere
       holiday:
         holiday_date: Datum
         musthours_day: Sollstunden
@@ -240,6 +276,7 @@ de-DE:
         billing_date: Rechnungsdatum
         calculated_total_amount: Total Leistungen
         calculated_total_hours: Verrechenbare Leistungen
+        due_date: Fälligkeitsdatum
         employees: Members
         grouping: Gruppierung
         invoice_posts: Rechnungspositionen
@@ -384,10 +421,10 @@ de-DE:
         must_hours_per_day: Arbeitszeit pro Tag
       worktime:
         account_id: Buchungsposition
-        absence_id: Absenz
+        absence_id: Abwesenheit
         work_item: Buchungsposition
         work_item_id: Buchungsposition
-        absence: Absenz
+        absence: Abwesenheit
         employee_id: Member
         report_type: Reporttyp
         work_date: Datum
